@@ -11,4 +11,4 @@ class Congregation(models.Model):
         ordering = ['name']
 
     def __str__(self):
-        return str(self.id) + ' - ' + self.name
+        return self.name

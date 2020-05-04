@@ -1,1 +1,14 @@
-<h1>Congregation {{name}}</h1>
+<h1>Congregations {{name}}</h1>
+
+<ul>
+{% for congregation in congregations %}
+    <li>
+    
+    <a href=" {% url 'congregation:detail' congregation.id %} ">
+    
+    {{congregation.name}}
+    </a>
+    </li>
+{% endfor %}
+
+</ul>
