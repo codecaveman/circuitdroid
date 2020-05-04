@@ -6,11 +6,5 @@ jobs:
   job1-for-circuitdroid:
     runs-on: ubuntu-latest
     steps:
-      - name: Simple JS Acion
-        id: greet
-        uses: actions/hello-world-javacript-action@v1
-        with:
-          who-to-greet: Errol
-      - name: Log the Greeting Time
-        run: echo "${{ steps.greet.output.time}} was logged by yours truly"
-
+      - name: Log Greeting
+        run: echo "Greeting was logged by yours truly"
